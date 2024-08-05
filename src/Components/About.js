@@ -12,7 +12,7 @@ function About() {
           I have done two major projects and gained practical knowledge." delay={100} />
       
         </p>
-        <img src={image} alt="Description of the image" />
+        <img src={image} alt="Description" />
       </div>
     </div>
   );
