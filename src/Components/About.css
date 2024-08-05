@@ -1,24 +1,33 @@
-/* About.css */
 .about-container {
-    min-height: 100vh; /* Make sure the container takes the full height of the viewport */
-    background-image: url("C:\\Users\\recha\\Downloads\\p1.png"); /* Replace with the actual path to your image */
-    background-size: cover; /* Make sure the background image covers the entire container */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    display: flex; /* Use Flexbox to align content */
-    justify-content: flex-end; /* Align content to the right */
-    align-items: center; /* Center content vertically */
-    padding: 20px; /* Optional: add some padding */
-    color: white; /* Optional: set text color to white for better contrast */
-    font-family: 'Roboto', sans-serif; /* Apply the Google Font */
-    overflow: hidden; /* Prevents overflow issues on small screens */
-  }
+  min-height: 100vh;
+  background-image: url("../assets/images/p1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  position: relative; /* Allow positioning of child elements */
+}
+
+.text {
+  margin-left: 50%;
+  font-size: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  line-height: 2; /* Increase line spacing */
+  max-width: 60%; /* Ensure text does not overflow */
+}
+
+/* Image styling */
+.about-container img {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom */
+  right: 30%; /* Adjust the distance from the right */
+  max-width: 20%; /* Adjust the size of the image */
+  height: auto; /* Maintain aspect ratio */
   
-  .text {
-    margin-left:50%;/* Optional: limit the width of the text container*/
-    /* text-align: right; Align text to the right */
-    /* background-color: #01003a; Optional: add a semi-transparent background for better readability */
-    font-size : 20px;
-    font-family:  "Lucida Console", "Courier New", monospace;;
-  }
-  
+}

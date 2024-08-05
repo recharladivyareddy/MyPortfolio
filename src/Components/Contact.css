@@ -6,6 +6,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+    margin-top:7%;
     background-color: #01002a;
     border-radius: 10px;
     box-shadow: 0 4px 8px #01005a;
@@ -73,4 +74,21 @@
       width: 100%;
     }
   }
-  
+  .social-icons {
+    /* margin-left: 50%; */
+    margin-top: 2%; 
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add space between icons */
+}
+
+.social-icon {
+    color: white;
+    font-size: 32px; /* Increase the size of the icons */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #80bdff; /* Change this to your preferred hover color */
+}

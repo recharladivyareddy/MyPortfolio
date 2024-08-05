@@ -39,8 +39,7 @@ const Contact = () => {
     };
     return (
         <div >
-            <h3>Contact Us</h3>
-            <h3>Contact Us</h3>
+            
             <form onSubmit={sendEmail} className='emailForm'>
                 <label>Your Name:</label>
                 <input
@@ -65,6 +64,17 @@ const Contact = () => {
                 />
                 <input type="submit" value="Send Email" />
             </form>
+            <div className="social-icons">
+                <a href="https://github.com/recharladivyareddy" className="social-icon" aria-label="GitHub">
+                    <i className="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/divya-reddy-29576523b" className="social-icon" aria-label="LinkedIn">
+                    <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://leetcode.com/123divyareddy" className="social-icon" aria-label="LeetCode">
+                    <i className="fas fa-code"></i>
+                </a>
+            </div>
         </div>
     );
 };
