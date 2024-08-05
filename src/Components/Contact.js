@@ -11,11 +11,11 @@ const Contact = () => {
         const templateParams = {
             from_name: name,
             from_email: email,
-            to_name: 'Divya',
+            to_name: <name>,
             message: message,
         };
-        emailjs.send('service_jhui4rs', 'template_xxuru7y',
-            templateParams, 'YdtmyFfhvGK4A5XWH')
+        emailjs.send('service_id', '<template_id>',
+            templateParams, '<user_id>')
             .then((result) => {
                 console.log(result.text);
                 console.log(email);
