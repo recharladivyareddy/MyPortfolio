@@ -15,16 +15,15 @@ const Contact = () => {
         const templateParams = {
             from_name: name,
             from_email: email,
-            to_name: <name>,
+            to_name: 'Divya',
             message: message,
         };
-<<<<<<< HEAD
+
         emailjs.send(serviceId, templateId,
             templateParams, userId)
-=======
+
         emailjs.send('service_id', '<template_id>',
             templateParams, '<user_id>')
->>>>>>> 7bca974268a36fed8504ae27b0303a2297a773fa
             .then((result) => {
                 console.log(result.text);
                 console.log(email);
