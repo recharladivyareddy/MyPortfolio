@@ -1,0 +1,76 @@
+/* Contact.css */
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #01002a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #01005a;
+  }
+  
+  .emailForm h3, .emailForm h4 {
+    color: #343a40;
+  }
+  
+  .emailForm label {
+    margin: 10px 0 5px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .emailForm input[type="text"],
+  .emailForm input[type="email"],
+  .emailForm textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 14px;
+    background-color: #01003a; /* Background color of input fields */
+    color: white; /* Text color inside input fields */
+  }
+  
+  .emailForm input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #01001a;
+    border: none;
+    border-radius: 5px;
+    color: white; /* Text color inside the submit button */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .emailForm input[type="submit"]:hover {
+    background-color: #01007a;
+  }
+  
+  .emailForm input:focus,
+  .emailForm textarea:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #01003a; /* Ensure background color stays consistent on focus */
+    color: white; /* Ensure text color stays white on focus */
+  }
+  
+  @media (max-width: 768px) {
+    .emailForm {
+      padding: 10px;
+    }
+  
+    .emailForm input[type="text"],
+    .emailForm input[type="email"],
+    .emailForm textarea {
+      width: 100%;
+    }
+  
+    .emailForm input[type="submit"] {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+/* Navbar.css */
+.navb {
+    margin-bottom: 20px;
+    /* background-color: #01003b; */
+  }
+  
+  .navbar {
+    font-family: Georgia, serif; /* Change to your desired font family */
+    font-size: 25px; /* Change to your desired font size */
+    padding: 1rem 1.5rem;
+    background-color: #01003a;
+    color:white;
+    
+  }
+  
+  .navbar-brand {
+    font-family:  "Lucida Console", "Courier New", monospace; /* Change to your desired font family for the brand */
+    font-size: 28px; /* Change to your desired font size for the brand */
+    color:white;
+  }
+  
+  .nav-link {
+    font-family: "Lucida Console", "Courier New", monospace;/* Change to your desired font family for the links */
+    font-size: 20px; /* Change to your desired font size for the links */
+    color:white;
+  }
+  
+
+  .navbar-brand, .nav-link {
+    color: white !important; /* Set font color to white */
+  }
+  
+  .nav-link:hover {
+    color: #ccc !important; /* Set hover color to a lighter shade */
+  }
