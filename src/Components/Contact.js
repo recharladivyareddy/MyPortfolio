@@ -5,6 +5,10 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const userId = process.env.REACT_APP_USER_ID;
+
     const sendEmail = (e) => {
         e.preventDefault();
         // Create a new object that contains dynamic template params
@@ -14,8 +18,8 @@ const Contact = () => {
             to_name: 'Divya',
             message: message,
         };
-        emailjs.send('service_jhui4rs', 'template_xxuru7y',
-            templateParams, 'YdtmyFfhvGK4A5XWH')
+        emailjs.send(serviceId, templateId,
+            templateParams, userId)
             .then((result) => {
                 console.log(result.text);
                 console.log(email);

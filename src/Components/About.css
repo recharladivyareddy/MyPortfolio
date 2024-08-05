@@ -1,7 +1,7 @@
 /* About.css */
 .about-container {
     min-height: 100vh; /* Make sure the container takes the full height of the viewport */
-    background-image: url('E:\\Downloads\\p1.png'); /* Replace with the actual path to your image */
+    background-image: url("C:\\Users\\recha\\Downloads\\p1.png"); /* Replace with the actual path to your image */
     background-size: cover; /* Make sure the background image covers the entire container */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
