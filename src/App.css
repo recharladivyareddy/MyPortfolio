@@ -1,10 +1,10 @@
-/* App.css */
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #01003a;
-  background-size: cover; /* This ensures the image covers the entire page */
-  background-position: center; /* This centers the image */
-  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-color: #01002a;
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
 }

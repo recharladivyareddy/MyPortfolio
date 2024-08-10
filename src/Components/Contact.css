@@ -1,94 +1,127 @@
 /* Contact.css */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
 .emailForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top:7%;
-    background-color: #01002a;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px #01005a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%; /* Ensure the form takes full width */
+  padding: 20px;
+  padding-top: 3px;
+  margin-top: 5%; /* Reduce top margin for better visibility on mobile */
+  background-color: #01002a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #01005a;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.emailForm h3, .emailForm h4 {
+  color: #ffffff;
+  text-align: center; /* Center the headings */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.emailForm label {
+  margin: 10px 0 5px;
+  color: white;
+  font-weight: 600;
+  text-align: left; /* Align the label to the left */
+  width: 80%;
+}
+
+.emailForm input[type="text"],
+.emailForm input[type="email"],
+.emailForm textarea {
+  width: 100%; /* Ensure inputs take full width */
+  padding: 12px; /* Increase padding for better touch target */
+  margin-bottom: 15px;
+  border: none;
+  font-size: 16px; /* Increase font size */
+  background-color: #01003a;
+  color: white;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.emailForm input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #01001a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make the submit button full width */
+  max-width: 400px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.emailForm input[type="submit"]:hover {
+  background-color: #01007a;
+}
+
+.emailForm input:focus,
+.emailForm textarea:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  background-color: #01003a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .emailForm {
+    padding: 10px;
+    margin-top: 3%; /* Adjust top margin for smaller screens */
   }
-  
-  .emailForm h3, .emailForm h4 {
-    color: #343a40;
-  }
-  
+
   .emailForm label {
-    margin: 10px 0 5px;
-    color: white;
-    font-weight: 600;
+    width: 100%; /* Make label full width on smaller screens */
   }
-  
-  .emailForm input[type="text"],
-  .emailForm input[type="email"],
-  .emailForm textarea {
-    width: 80%;
-    max-width: 400px;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: none;
-    font-size: 14px;
-    background-color: #01003a; /* Background color of input fields */
-    color: white; /* Text color inside input fields */
-  }
-  
-  .emailForm input[type="submit"] {
-    padding: 8px 16px;
-    background-color: #01001a;
-    border: none;
-    border-radius: 5px;
-    color: white; /* Text color inside the submit button */
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .emailForm input[type="submit"]:hover {
-    background-color: #01007a;
-  }
-  
-  .emailForm input:focus,
-  .emailForm textarea:focus {
-    outline: none;
-    border-color: #80bdff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    background-color: #01003a; /* Ensure background color stays consistent on focus */
-    color: white; /* Ensure text color stays white on focus */
-  }
-  
-  @media (max-width: 768px) {
-    .emailForm {
-      padding: 10px;
-    }
-  
-    .emailForm input[type="text"],
-    .emailForm input[type="email"],
-    .emailForm textarea {
-      width: 100%;
-    }
-  
-    .emailForm input[type="submit"] {
-      width: 100%;
-    }
-  }
+
   .social-icons {
-    /* margin-left: 50%; */
-    margin-top: 2%; 
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Add space between icons */
+    gap: 10px; /* Reduce gap on smaller screens */
+  }
+
+  .social-icon {
+    font-size: 28px; /* Reduce icon size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .emailForm {
+    margin-top: 2%; /* Further adjust top margin for very small screens */
+  }
+
+  .social-icon {
+    font-size: 24px; /* Further reduce icon size on very small screens */
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add space between icons */
 }
 
 .social-icon {
-    color: white;
-    font-size: 32px; /* Increase the size of the icons */
-    margin: 0 10px;
-    transition: color 0.3s ease;
+  color: white;
+  font-size: 32px; /* Increase the size of the icons */
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #80bdff; /* Change this to your preferred hover color */
+  color: #80bdff; /* Change this to your preferred hover color */
 }

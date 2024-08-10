@@ -38,9 +38,9 @@ const Contact = () => {
             });
     };
     return (
-        <div >
-            
+        <div className='contact'>
             <form onSubmit={sendEmail} className='emailForm'>
+            <h3 style={{color:"white"}}>Get in Touch</h3>
                 <label>Your Name:</label>
                 <input
                     type="text"
@@ -64,7 +64,7 @@ const Contact = () => {
                 />
                 <input type="submit" value="Send Email" />
             </form>
-            <div className="social-icons">
+            <div className="social-icons" style={{justifyContent:"center"}}>
                 <a href="https://github.com/recharladivyareddy" className="social-icon" aria-label="GitHub">
                     <i className="fab fa-github"></i>
                 </a>
